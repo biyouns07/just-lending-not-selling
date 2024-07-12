@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Lending Not Selling</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background-image: url('https://via.placeholder.com/1500x800?text=Library+Background');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+        }
+        .books {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .book {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .price-tag {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 1.2em;
+        }
+        form input[type="text"], form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        @media screen and (max-width: 600px) {
+            .overlay {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .book {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Just Lending Not Selling</h1>
+
+        <div class="books">
+            <div class="book">
+                <img src="https://m.media-amazon.com/images/I/51l7NOyQAaL.jpg" alt="Harry Potter and the Prisoner of Azkaban">
+                <h3>Harry Potter and the Prisoner of Azkaban</h3>
+                <p>Illustrated by Jim Kay</p>
+                <p><strong>Available:</strong> Yes</p>
+                <div class="price-tag">
+                    <p>The amount you pay us: Rs 500</p>
+                    <p>The amount we will return: Rs 450</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="https://m.media-amazon.com/images/I/81R2N4PRuUL._AC_UF1000,1000_QL80_.jpg" alt="Diary of a Wimpy Kid: A Novel in Cartoons">
+                <h3>Diary of a Wimpy Kid: A Novel in Cartoons</h3>
+                <p>By Jeff Kinney</p>
+                <p><strong>Available:</strong> Yes</p>
+                <div class="price-tag">
+                    <p>The amount you pay us: Rs 300</p>
+                    <p>The amount we will return: Rs 270</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81ZNkhqRvVL._AC_UL210_SR210,210_.jpg" alt="Demon Slayer: Kimetsu no Yaiba Volume 1">
+                <h3>Demon Slayer: Kimetsu no Yaiba Volume 1</h3>
+                <p>By Koyoharu Gotouge</p>
+                <p><strong>Available:</strong> Yes</p>
+                <div class="price-tag">
+                    <p>The amount you pay us: Rs 200</p>
+                    <p>The amount we will return: Rs 180</p>
+                </div>
+            <div class="book">
+		<img src="https://m.media-amazon.com/images/I/61D%2B0Qv6afL._AC_SY200_QL15_.jpg" alt="Demon Slayer: Kimetsu no Yaiba Volume 2">
+		<h3>Demon Slayer: Kimetsu no Yaiba Volume 2</h3>
+		<p>By Koyoharu Gotouge</p>
+		<p><strong>Available:</strong> Yes</p>
+		<div class="price-tag">
+                    <p>The amount you pay us: Rs 200</p>
+                    <p>The amount we will return: Rs 180</p>
+                </div>
+            </div>
+	    <div class="book">
+		<img src="https://m.media-amazon.com/images/I/81JUtEL7gkL._AC_UF350,350_QL50_.jpg" alt="Demon Slayer: Kimetsu no Yaiba Volume 3">
+		<h3>Demon Slayer: Kimetsu no Yaiba Volume 3</h3>
+		<p>By Koyoharu Gotouge</p>
+		<p><strong>Available:</strong> Yes</p>
+                <div class="price-tag">
+                    <p>The amount you pay us: Rs 200</p>
+                    <p>The amount we will return: Rs 180</p>
+                </div>
+            </div>
+	    <div class="book">
+		<img src="https://m.media-amazon.com/images/I/81FIh3qnWAL._AC_UF1000,1000_QL80_.jpg" alt="Demon Slayer: Kimetsu no Yaiba Volume 4">
+		<h3>Demon Slayer: Kimetsu no Yaiba Volume 4</h3>
+		<p>By Koyoharu Gotouge</p>
+		<p><strong>Available:</strong> Yes</p>
+		<div class="price-tag">
+                    <p>The amount you pay us: Rs 200</p>
+                    <p>The amount we will return: Rs 180</p>
+                </div>
+            </div>
+	    <div class="book">
+		<img src="https://m.media-amazon.com/images/I/81s302EkgiL._AC_UF350,350_QL50_.jpg" alt="Demon Slayer: Kimetsu no Yaiba Volume 5">
+		<h3>Demon Slayer: Kimetsu no Yaiba Volume 5</h3>
+		<p>By Koyoharu Gotouge</p>
+		<p><strong>Available:</strong> Yes</p>
+		<div class="price-tag">
+                    <p>The amount you pay us: Rs 200</p>
+                    <p>The amount we will return: Rs 180</p>
+                </div>
+            </div>
+	    <div class="book">
+		<img src="https://m.media-amazon.com/images/I/81wXkWkdj6L._AC_UF1000,1000_QL80_.jpg" alt="Demon Slayer: Kimetsu no Yaiba Volume 6">
+		<h3>Demon Slayer: Kimetsu no Yaiba Volume 6</h3>
+		<p>By Koyoharu Gotouge</p>
+		<p><strong>Available:</strong> Yes</p>
+	        <div class="price-tag">
+                    <p>The amount you pay us: Rs 200</p>
+                    <p>The amount we will return: Rs 180</p>
+                </div>
+            </div>
+	    <div class="book">
+		<img src="https://m.media-amazon.com/images/I/81E-uG6SQqL._AC_UF350,350_QL50_.jpg" alt="Demon Slayer: Kimetsu no Yaiba Volume 7">
+		<h3>Demon Slayer: Kimetsu no Yaiba Volume 7</h3>
+		<p>By Koyoharu Gotouge</p>
+		<p><strong>Available:</strong> Yes</p>
+		<div class="price-tag">
+                    <p>The amount you pay us: Rs 200</p>
+                    <p>The amount we will return: Rs 180</p>
+                </div>
+            </div>
+
+        <form id="borrowForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Your Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="book">Book Title:</label>
+            <input type="text" id="book" name="book" required>
+
+            <input type="submit" value="Borrow Book">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('borrowForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the form values
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var book = document.getElementById('book').value;
+
+            // Display the message
+            alert('To order the book "' + book + '", please contact 9808725232 or contact this number 9806560113.\n\nNote:\n1. Here you first pay the official amount of the book.\n2. After the book is returned, we will pay you the price after deducting charges of the book and services.\n3. If the condition of the book has even the slightest tears or folds, then we will not be returning the money nor take the book.');
+
+            // Optionally, log the details to the console or handle them as needed
+            console.log('Name: ' + name);
+            console.log('Phone: ' + phone);
+            console.log('Book: ' + book);
+        });
+    </script>
+</body>
+</html>
